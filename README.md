@@ -20,9 +20,9 @@
     .container {
       max-width: 900px;
       width: 100%;
-      background: rgba(15, 15, 30, 0.95);
+      background: rgba(15, 15, 30, 0.98);
       border-radius: 20px;
-      box-shadow: 0 0 25px rgba(0,255,170,0.25), 0 0 50px rgba(0,150,255,0.2);
+      box-shadow: 0 0 20px rgba(0,255,170,0.15);
       overflow: hidden;
     }
     .header {
@@ -33,14 +33,14 @@
       position: relative;
     }
     .header h1 {
-      font-size: 34px;
+      font-size: 32px;
       font-weight: bold;
-      text-shadow: 0 0 15px #00ffaa;
+      text-shadow: 0 0 12px #00ffaa;
     }
     .header p {
       font-size: 18px;
       margin-top: 10px;
-      opacity: 0.9;
+      opacity: 0.95;
     }
     .vip-badge {
       position: absolute;
@@ -52,12 +52,7 @@
       border-radius: 25px;
       color: #000;
       font-size: 14px;
-      animation: pulse 2s infinite;
-    }
-    @keyframes pulse {
-      0% { box-shadow: 0 0 5px #ffd700; }
-      50% { box-shadow: 0 0 25px #ffd700; }
-      100% { box-shadow: 0 0 5px #ffd700; }
+      box-shadow: 0 0 8px #ffd700;
     }
     .content { padding: 30px; }
     .headline {
@@ -65,7 +60,6 @@
       font-size: 24px;
       margin-bottom: 25px;
       color: #00ffaa;
-      text-shadow: 0 0 10px #00ffaa;
       font-weight: bold;
     }
     .offer-container {
@@ -77,18 +71,17 @@
     .vip-art {
       flex: 1;
       min-width: 280px;
-      background: linear-gradient(135deg, #111, #1a1a2e);
-      border: 2px solid #00ffaa;
-      border-radius: 15px;
+      background: #111827;
+      border: 1px solid #00ffaa;
+      border-radius: 12px;
       text-align: center;
       padding: 25px;
-      box-shadow: 0 0 15px rgba(0,255,170,0.3);
     }
     .vip-art h2 {
       color: #00ffaa;
       margin-bottom: 10px;
     }
-    .vip-icon { font-size: 60px; color: #00aaff; margin-bottom: 15px; }
+    .vip-icon { font-size: 50px; color: #00aaff; margin-bottom: 15px; }
     .countdown {
       background: rgba(0,0,0,0.7);
       color: #ffd700;
@@ -106,19 +99,19 @@
       display: flex;
       align-items: center;
       margin-bottom: 15px;
-      background: rgba(255,255,255,0.05);
+      background: rgba(255,255,255,0.03);
       padding: 15px;
       border-radius: 10px;
       border-left: 4px solid #00ffaa;
     }
     .benefit-icon { font-size: 28px; color: #00aaff; margin-right: 15px; }
-    .benefit-item h3 { margin: 0; color: #00ffaa; }
-    .benefit-item p { font-size: 14px; }
+    .benefit-item h3 { margin: 0; color: #00ffaa; font-size: 18px; }
+    .benefit-item p { font-size: 14px; color: #ccc; }
     .testimonials {
       margin: 30px 0;
       background: rgba(255,255,255,0.05);
       padding: 20px;
-      border-radius: 15px;
+      border-radius: 12px;
       border: 1px solid #00aaff;
     }
     .testimonials h2 {
@@ -132,16 +125,16 @@
       margin-bottom: 15px;
     }
     .testimonial img {
-      width: 50px;
-      height: 50px;
+      width: 55px;
+      height: 55px;
       border-radius: 50%;
       margin-right: 15px;
       border: 2px solid #00ffaa;
     }
     .testimonial-content {
-      background: rgba(0,0,0,0.6);
+      background: rgba(0,0,0,0.5);
       padding: 12px;
-      border-radius: 10px;
+      border-radius: 8px;
       flex: 1;
       border: 1px solid #00ffaa;
       font-size: 14px;
@@ -155,32 +148,50 @@
       text-align: center;
       padding: 30px;
       background: linear-gradient(90deg, #00ffaa, #00aaff, #8a2be2);
-      border-radius: 15px;
+      border-radius: 12px;
       margin-top: 30px;
-      box-shadow: 0 0 25px rgba(0,255,170,0.4);
     }
     .cta-section h2 { margin-bottom: 10px; }
     .btn {
       display: inline-block;
       background: #ffd700;
       color: #000;
-      padding: 18px 45px;
+      padding: 16px 40px;
       border-radius: 50px;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: bold;
       text-decoration: none;
       margin-top: 20px;
-      box-shadow: 0 0 15px #ffd700;
+      box-shadow: 0 0 12px #ffd700;
       transition: 0.3s;
     }
-    .btn:hover { background: #ffcc00; box-shadow: 0 0 25px #ffd700; }
+    .btn:hover { background: #ffcc00; box-shadow: 0 0 18px #ffd700; }
+    .safety {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #222;
+    }
+    .safety div {
+      background: #fff;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
     .footer {
       text-align: center;
       padding: 20px;
       font-size: 13px;
-      color: #777;
+      color: #888;
       border-top: 1px solid rgba(255,255,255,0.1);
     }
+    .footer a { color: #00aaff; text-decoration: none; margin: 0 8px; }
+    .footer a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
@@ -232,7 +243,7 @@
         <div class="testimonial">
           <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Maria">
           <div class="testimonial-content">
-            "Em 2 semanas fiz meu primeiro Pix com apps do grupo VIP!"
+            "Em 2 semanas recebi meu primeiro Pix de R$250 com apps do grupo VIP!"
             <div class="testimonial-author">Maria S. – Recife</div>
           </div>
         </div>
@@ -257,11 +268,21 @@
         <p>Acesso imediato ao grupo VIP por apenas <strong style="font-size:22px;">R$19,00/mês</strong></p>
         <p><s>De R$97,00</s> → <strong>Agora por apenas R$19,00</strong></p>
         <a href="https://pay.kiwify.com.br/KvngGJj" class="btn"><i class="fas fa-lock"></i> GARANTIR MINHA VAGA AGORA</a>
-        <p style="margin-top:15px; font-size:14px;">Compra 100% segura | Garantia de 7 dias | Vagas limitadas</p>
+
+        <div class="safety">
+          <div><i class="fas fa-shield-alt"></i> Compra Segura</div>
+          <div><i class="fas fa-sync-alt"></i> Garantia 7 dias</div>
+          <div><i class="fas fa-users"></i> +2.350 membros</div>
+        </div>
       </div>
     </div>
 
-    <div class="footer">© 2024 Trampo Digital VIP. Todos os direitos reservados.</div>
+    <div class="footer">
+      © 2024 Trampo Digital VIP. Todos os direitos reservados. <br>
+      <a href="#">Política de Privacidade</a> | 
+      <a href="#">Termos de Uso</a> | 
+      <a href="#">Suporte</a>
+    </div>
   </div>
 
   <script>
